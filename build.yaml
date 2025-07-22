@@ -17,6 +17,16 @@
 #     cmake-args: -DCONFIG_ZMK_STUDIO=y
 #     artifact-name: corne_left_with_studio
 #
+# IMPORTANTE:
+# - Debes compilar y flashear el firmware de cada lado por separado.
+# - Usa el shield correcto para cada lado:
+#     Lado izquierdo:  shield=corne_left
+#     Lado derecho:    shield=corne_right
+# - Ejemplo de compilación manual:
+#     west build -d build/left -b nice_nano_v2 -- -DSHIELD=corne_left
+#     west build -d build/right -b nice_nano_v2 -- -DSHIELD=corne_right
+# - Si flasheas el mismo firmware en ambos lados, el teclado NO funcionará correctamente.
+#
 ---
 include:
   - board: nice_nano_v2

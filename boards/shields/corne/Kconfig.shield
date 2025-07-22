@@ -12,7 +12,7 @@ config SHIELD_CORNE
 if SHIELD_CORNE
 
 config ZMK_KEYBOARD_NAME
-    default "Corne"
+    default "Drako"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
     default y if SHIELD_CORNE_LEFT
